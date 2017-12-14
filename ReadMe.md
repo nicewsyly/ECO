@@ -56,4 +56,4 @@ training.h, training.cpp: 特征的训练(更新)函数
 注意事项：
 1. 如果编译显示：编译器内部错误，一个解决方法为： 将属性表中常规的全程需优化选项设置为无全程序优化；c/c++子属性优化中的全程序优化选项改为否
 2. 目前使用caffe-windows CPU版本，GPU将尽快更新
-3. vgg相关文件下载地址为：https://pan.baidu.com/s/1skVkPLN 下载完成后将文件放在VGG文件夹下即可
+3. vgg相关文件下载地址为：https://pan.baidu.com/s/1skVkPLN 下载完成后将VGG文件夹的路径在main.cpp 59、60、61行的路径修改即可
