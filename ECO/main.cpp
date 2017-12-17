@@ -56,9 +56,10 @@ int main()
 {
 	
 	//***********load net prototxt ********************************
-	const string proto("F:\\ECO\\ECO\\ECO\\VGG\\imagenet-vgg-m-2048.prototxt");
-	const string model("F:\\ECO\\ECO\\ECO\\VGG\\VGG_CNN_M_2048.caffemodel");
-	const string mean_file("F:\\ECO\\ECO\\ECO\\VGG\\VGG_mean.binaryproto");
+	const string proto("VGG/imagenet-vgg-m-2048.prototxt");
+	const string model("VGG/VGG_CNN_M_2048.caffemodel");
+	const string mean_file("VGG/VGG_mean.binaryproto");
+	const std::string mean_yml("VGG/mean.yml");
 	
 #ifdef  USE_VIDEO
 	//***********Frame readed****************************************
@@ -94,7 +95,7 @@ int main()
 	cvSetMouseCallback(WIN_NAME.c_str(), NULL, NULL);
 	//box.x = 100; box.y = 150; box.width = 82; box.height = 211;
 
-	ECO Eco(1, proto, model, mean_file);
+	ECO Eco(1, proto, model, mean_file,mean_yml);
 	Eco.init(frame, box);
 	int idx = 0;
 	while (idx++<100)

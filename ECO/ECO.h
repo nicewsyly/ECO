@@ -37,7 +37,7 @@ namespace eco{
 	public:
 		virtual  ~ECO(){}
 
-		ECO(bool useDeepFeature = 0, const string& proto = "", const string& model = "", const string& mean_file = "");
+		ECO(bool useDeepFeature = 0, const string& proto = "", const string& model = "", const string& mean_file = "",const std::string& mean_yml="");
 
 		void          init(cv::Mat& im, const cv::Rect& rect);		  //****** tracker intialization****
 

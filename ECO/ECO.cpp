@@ -28,11 +28,11 @@ namespace eco{
 
 		return res;
 	}
-	ECO::ECO(bool puseDeepFeature, const string& proto, const string& model, const string& mean_file)
+	ECO::ECO(bool puseDeepFeature, const string& proto, const string& model, const string& mean_file,const std::string& mean_yml)
 	{
 		if (puseDeepFeature)
 		{
-			yml_mean = meanMatFromYML("mean.yml");
+			yml_mean = meanMatFromYML(mean_yml);
 			useDeepFeature = puseDeepFeature;
 			if (proto.empty() || model.empty())
 				assert("the proto or model is empty");
