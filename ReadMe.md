@@ -44,8 +44,6 @@ Detailed description and description follow-up update
 
 Supplementary：
 
-Currently caffe-windows of ECO is CPU version, the GPU version will be updated as soon as possible
-
 The name of variables , functions of the classes are according to ECO matlab version. During debugging code, also you can reference to ECO Matlab version.
 
 Vgg model is available at https://pan.baidu.com/s/1skVkPLN. After downloading, the path of the VGG folder in the main.cpp on the line 59,60,61 shall be modified.
